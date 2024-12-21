@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+    text-align: center;
+    background-image: url(https://media.istockphoto.com/id/1143017063/vector/school-grade-results-vector-icons-letters-and-plus-grades-marks-in-red-circle.jpg?s=612x612&w=0&k=20&c=bsycxRXFcTjOIWm1vtd7D30vxtLuW-Zu_RG62HyQD6k=);
+    color: blue;
+    background-size:cover ;
+}
+#h{
+    font-size: 25px;
+}
+        </style>
+    </head>
+    <body>
+        <h1>GRADE GENERATOR</h1>
+        <h3>ENTER MARKS:</h3>
+        <input type="number" id="j">
+        <button onclick="jk()">Generate grade</button>
+        <p id="h"></p>
+        <script>
+            function jk(){
+                var kj=document.getElementById("j").value
+                if (kj>=90 && kj<=100){
+                    document.getElementById("h").innerHTML="A+"
+                    }
+                else if (kj>=80 && kj<=89){
+                    document.getElementById("h").innerHTML="A"
+                    }
+                else if (kj>=70 && kj<=79){
+                    document.getElementById("h").innerHTML="A-"
+                    }
+                else if (kj>=60 && kj<=69){
+                    document.getElementById("h").innerHTML="B+"
+                    }
+                else if (kj>=50 && kj<=59){
+                    document.getElementById("h").innerHTML="B"
+                    }
+                else if (kj>=40 && kj<=49){
+                    document.getElementById("h").innerHTML="B-"
+                    }
+                else if (kj>=30 && kj<=39){
+                    document.getElementById("h").innerHTML="C"
+                    }
+                else if (kj>=20 && kj<=29){
+                    document.getElementById("h").innerHTML="D"
+                    }
+                else if (kj>=10 && kj<=19){
+                    document.getElementById("h").innerHTML="D-"
+                    }
+                else if (kj>=0 && kj<=9){
+                    document.getElementById("h").innerHTML="F-"
+                    }
+            }
+        </script>
+    </body>
